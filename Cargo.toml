@@ -1,0 +1,31 @@
+[package]
+name = "audira"
+version = "0.1.0"
+edition = "2021"
+authors = ["Varun J"]
+description = "A music player for Windows"
+license = "MIT"
+
+[package.metadata.wix]
+eula = false
+
+[[bin]]
+name = "audira"
+path = "src/main.rs"
+
+[dependencies]
+iced        = { version = "0.13", features = ["canvas", "tokio", "advanced", "image", "svg"] }
+rodio       = { version = "0.20", features = ["mp3", "flac", "vorbis", "wav"] }
+lofty       = "0.22"
+tokio       = { version = "1", features = ["full"] }
+serde       = { version = "1", features = ["derive"] }
+serde_json  = "1"
+dirs        = "5"
+image       = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+rand        = "0.8"
+rfd         = "0.15"
+
+[profile.release]
+opt-level = 3
+lto       = true
+strip     = true
