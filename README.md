@@ -11,6 +11,7 @@ Audira brings the same minimal aesthetic to Windows using a fully native Rust st
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue?logo=windows&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Version](https://img.shields.io/badge/Version-0.1.0-purple)
+![Audira Screenshot](assets/screenshot.png)
 
 </div>
 
